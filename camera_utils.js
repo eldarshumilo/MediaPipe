@@ -88,8 +88,8 @@
         return navigator.mediaDevices.getUserMedia({
             video: {
                 facingMode: b.facingMode,
-                width: b.width,
-                height: b.height
+                width: 720,
+                height: 1280
             }
         }).then(function (c) {
             t(a, c)
