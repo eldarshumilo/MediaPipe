@@ -827,8 +827,8 @@
     };
     var sa = {
             facingMode: "user",
-            width: 1280,
-            height: 720
+            width: 720,
+            height: 1280
         },
         ta = {
             allowVideo: !0,
