@@ -51,7 +51,7 @@
     var n = {
         facingMode: "user",
         width: 1080,
-        height: 1920
+        height: 1080
     };
 
     function p(a, b) {
@@ -89,10 +89,14 @@
             video: {
                 facingMode: b.facingMode,
                 width: 1080,
-                height: 1920
+                height: 1080
             }
         }).then(function (c) {
             t(a, c)
+        }).catch(function (c) {
+            console.error("Failed to acquire camera feed: " + c);
+            alert("Failed to acquire camera feed: " + c);
+            throw c;
         })
     };
     var u = ["Camera"],
