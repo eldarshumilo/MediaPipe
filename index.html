@@ -13,7 +13,7 @@
 <body>
   <div class="container" style=" ">
     <video class="input_video" style='display:none' ></video>
-    <canvas class="output_canvas" style="transform: scaleX(-1);" width="1080" height="1920"></canvas>
+    <canvas class="output_canvas" style="transform: scaleX(-1);" width="720" height="1280"></canvas>
   </div>
   <div id='result'></div>
   <script type="module">
@@ -50,8 +50,8 @@
       onFrame: async () => {
         await hands.send({image: videoElement});
       },
-      width: 1080,
-      height: 1920
+      width: 720,
+      height: 1280
     });
     camera.start();
     </script>
