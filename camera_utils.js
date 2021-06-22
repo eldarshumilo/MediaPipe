@@ -83,7 +83,7 @@
     }
     p.prototype.start = function () {
         var a = this;
-        navigator.mediaDevices && navigator.mediaDevices.getUserMedia || alert("No navigator.mediaDevices.getUserMedia exists.");
+        navigator.mediaDevices.getUserMedia || alert("No navigator.mediaDevices.getUserMedia exists.");
         var b = this.g;
         return navigator.mediaDevices.getUserMedia({
             video: {
