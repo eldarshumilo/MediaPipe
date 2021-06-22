@@ -93,10 +93,6 @@
             }
         }).then(function (c) {
             t(a, c)
-        }).catch(function (c) {
-            console.error("Failed to acquire camera feed: " + c);
-            alert("Failed to acquire camera feed: " + c);
-            throw c;
         })
     };
     var u = ["Camera"],
