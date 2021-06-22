@@ -825,10 +825,11 @@
         b = a.g.discrete ? Object.values(a.g.discrete)[b] : b;
         a.h.textContent = "" + b
     };
+    
     var sa = {
             facingMode: "user",
-            width: 720,
-            height: 1280
+            width: 1080,
+            height: 1920
         },
         ta = {
             allowVideo: !0,

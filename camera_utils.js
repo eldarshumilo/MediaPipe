@@ -50,8 +50,8 @@
     var m = this || self;
     var n = {
         facingMode: "user",
-        width: 720,
-        height: 1280
+        width: 1080,
+        height: 1920
     };
 
     function p(a, b) {
@@ -88,8 +88,8 @@
         return navigator.mediaDevices.getUserMedia({
             video: {
                 facingMode: b.facingMode,
-                width: 720,
-                height: 1280
+                width: 1080,
+                height: 1920
             }
         }).then(function (c) {
             t(a, c)
